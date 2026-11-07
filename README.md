@@ -35,7 +35,7 @@ The build is plain Node with no dependencies. It writes a static site to `dist/`
    npm run check:mobile
    ```
    It loads the page at phone widths from 320px to 430px, with the menu open and closed, and fails if anything scrolls sideways.
-6. **Deploy `dist/`** to any static host. On Cloudflare Pages, Netlify or Vercel, set the build command to `npm run build` and the output directory to `dist`.
+6. **Deploy `dist/`** to any static host. On Vercel, import the repo and deploy: `vercel.json` already sets the build command and output folder. On Cloudflare Pages or Netlify, set the build command to `npm run build` and the output directory to `dist`.
 
 The footer reads `© [Year] [Brand name]`. Both values come from `brand.year` (the current year by default) and `brand.name`.
 
